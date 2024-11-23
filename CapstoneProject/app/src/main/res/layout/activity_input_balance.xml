@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".ui.activity.InputBalanceActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Awal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berapa Nominal uang yang ada di dompetmu"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Nominal -->
+    <EditText
+        android:id="@+id/etBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rp 0"
+        android:inputType="none"
+        android:focusable="false"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Keypad Numerik -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Tombol Angka -->
+        <Button
+            android:id="@+id/btnKeypad1"
+            style="@style/KeypadButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnKeypad2"
+            style="@style/KeypadButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnKeypad3"
+            style="@style/KeypadButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnKeypad4"
+            style="@style/KeypadButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnKeypad5"
+            style="@style/KeypadButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnKeypad6"
+            style="@style/KeypadButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnKeypad7"
+            style="@style/KeypadButton"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btnKeypad8"
+            style="@style/KeypadButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btnKeypad9"
+            style="@style/KeypadButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnKeypad0"
+            style="@style/KeypadButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnKeypadDot"
+            style="@style/KeypadButton"
+            android:text="." />
+    </GridLayout>
+
+    <!-- Tombol Next -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:elevation="4dp" />
+</LinearLayout>
